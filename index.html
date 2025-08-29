@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+  <span>Calculator</span>
+  <button class="toggle-btn" onclick="toggleTheme()">Dark</button>
+</div>
+
+<h1>Calculator</h1>
+
+<div class="calculator">
+  <div class="display" id="display">0</div>
+  <div class="buttons">
+    <button class="btn-red" onclick="clearDisplay()">AC</button>
+    <button class="btn-red" onclick="deleteLast()">DEL</button>
+    <button class="btn-blue" onclick="appendValue('%')">%</button>
+    <button class="btn-orange" onclick="appendValue('/')">÷</button>
+
+    <button class="btn-dark" onclick="appendValue('7')">7</button>
+    <button class="btn-dark" onclick="appendValue('8')">8</button>
+    <button class="btn-dark" onclick="appendValue('9')">9</button>
+    <button class="btn-orange" onclick="appendValue('*')">×</button>
+
+    <button class="btn-dark" onclick="appendValue('4')">4</button>
+    <button class="btn-dark" onclick="appendValue('5')">5</button>
+    <button class="btn-dark" onclick="appendValue('6')">6</button>
+    <button class="btn-orange" onclick="appendValue('-')">-</button>
+
+    <button class="btn-dark" onclick="appendValue('1')">1</button>
+    <button class="btn-dark" onclick="appendValue('2')">2</button>
+    <button class="btn-dark" onclick="appendValue('3')">3</button>
+    <button class="btn-orange" onclick="appendValue('+')">+</button>
+
+    <button class="btn-dark" onclick="appendValue('0')">0</button>
+    <button class="btn-dark" onclick="appendValue('.')">.</button>
+    <button class="btn-blue" onclick="appendValue('^')">^</button>
+    <button class="equal-btn" onclick="calculateResult()">=</button>
+
+    <button class="btn-blue" onclick="factorial()">x!</button>
+    <button class="btn-blue" onclick="sqrt()">√</button>
+    <button class="btn-blue" onclick="inverse()">1/x</button>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
